@@ -24,14 +24,12 @@ train_dataloader = dict(
         type='CustomDataset',
         data_root=data_root,
         ann_file='',       # We assume you are using the sub-folder format without ann_file
-        data_prefix='train',
     ))
 val_dataloader = dict(
     dataset=dict(
         type='CustomDataset',
         data_root=data_root,
         ann_file='',       # We assume you are using the sub-folder format without ann_file
-        data_prefix='val',
     ))
 test_dataloader = val_dataloader
 checkpoint_config = dict(interval=10)
