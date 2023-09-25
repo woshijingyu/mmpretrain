@@ -32,5 +32,8 @@ val_dataloader = dict(
         ann_file='',       # We assume you are using the sub-folder format without ann_file
     ))
 test_dataloader = val_dataloader
-checkpoint_config = dict(interval=10)
+
+# Change the checkpoint saving interval to iter-based
+default_hooks = dict(checkpoint=dict(by_epoch=False, interval=10))
+
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
