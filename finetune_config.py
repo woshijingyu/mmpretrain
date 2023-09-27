@@ -40,6 +40,6 @@ val_dataloader = dict(
 test_dataloader = val_dataloader
 
 # Change the checkpoint saving interval to iter-based
-default_hooks = dict(checkpoint=dict(by_epoch=True, interval=10))
+default_hooks = dict(checkpoint=dict(by_epoch=True, interval=100))
 
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
